@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Therapy Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Contact a Therapist</h1>
+  <p class="subtitle">
+    Reach out to begin therapy in a safe and confidential space.
+  </p>
+
+  <form id="contactForm">
+
+    <label>
+      Full Name
+      <input type="text" id="name" placeholder="Your name" required>
+    </label>
+
+    <label>
+      Email Address
+      <input type="email" id="email" placeholder="you@example.com" required>
+    </label>
+
+    <label>
+      What brings you to therapy?
+      <select id="reason" required>
+        <option value="">Select an option</option>
+        <option>Anxiety</option>
+        <option>Trauma</option>
+        <option>Burnout / Stress</option>
+        <option>Perfectionism</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label>
+      Message (optional)
+      <textarea id="message" rows="4" placeholder="You can share more if you feel comfortable"></textarea>
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox" id="consent" required>
+      I understand this form is confidential and not for emergencies.
+    </label>
+
+    <button type="submit">Send Message</button>
+
+    <p class="note">
+      If this is an emergency, please contact local emergency services.
+    </p>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
